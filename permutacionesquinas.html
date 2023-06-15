@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {color: #990033}
+-->
+</style>
+</head>
+
+<body background="Fondo.png">
+<h1 align="center" class="style1">Permutacion de esquinas</h1>
+<hr />
+<h3><em>Tercera capa, tercer paso: Permutacion de esquinas</em></h3>
+<p>En este paso tenemos que conseguir colocar las esquinas en su lugar correcto, vigila, no hace falta que est&eacute;n bien orientadas, simplemente tienen que estar en el lugar que les corresponde.</p>
+<p>El algoritmo de este paso intercambia la posici&oacute;n de 3 de las aristas rot&aacute;ndolas en sentido antihorario. La arista que miraremos de cara es la &uacute;nica que no rotar&aacute;.</p>
+<p>Todas las esquinas est&aacute;n en su lugar, pero no todas est&aacute;n bien orientadas. Por ejemplo, la esquina amarilla, roja y azul, est&aacute; en su lugar pero no est&aacute; bien orientada, faltar&iacute;a rotarla en sentido horario para que est&eacute; bien orientada.</p>
+<p>Para conseguirlo usaremos un algoritmo que intercambia la posici&oacute;n de 3 esquinas en sentido antihorario.</p>
+<p><img src="rotacion.png" width="150" height="150" /></p>
+<center>
+  <p>Caso</p>
+</center>
+<p>En esta situaci&oacute;n orientamos el cubo de manera que, como en los &uacute;ltimos pasos, el centro amarillo mira hacia arriba y la esquina quede en la parte superior derecha de al cara frontal. Una vez tengamos el cubo bien orientado ya podremos realizar el algoritmo, puede ser que tengamos que hacer el algoritmo dos veces para rotar las esquinas hasta su lugar correcto.</p>
+<table width="100%" border="1" align="center">
+  <caption align="right" valign="top">&nbsp;
+  </caption>
+  <tbody>
+    <tr></tr>
+    <tr>
+      <th>Movimientos</th>
+      <th>Caso</th>
+    </tr>
+    <tr>
+      <td><p align="center">Movimiento R U R&rsquo; U R U U R&rsquo;</p></td>
+      <th><img src="esquinas.png" width="150" height="161" /></th>
+    </tr>
+  </tbody>
+</table>
+<p align="center">&nbsp;</p>
+</body>
+</html>
