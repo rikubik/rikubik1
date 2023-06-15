@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {color: #FFFF00}
+.style2 {color: #33FFFF}
+.style3 {color: #66FF00}
+.style4 {color: #CC0033}
+-->
+</style>
+</head>
+
+<body background="Fondo.png">
+<div align="center">
+  <h1 class="style4">Aristas principiante  </h1>
+  <hr />
+</div>
+<h3>Segunda capa: Aristas</h3>
+<ol type="I">
+  <li>Buscamos en la capa inferior una arista que no tenga color amarillo, las aristas que tengan color amarillo corresponden a la ultima capa</li>
+  <li>Moviendo la capa inferior hacemos coincidir el color lateral de la arista con el centro del mismo color, nos quedar&aacute; una forma de T.</li>
+  <li>Ahora, nos fijamos si esta arista va colocada a su derecha o a su izquierda, dependiendo de donde se coloque usaremos un algoritmo u otro.</li>
+</ol>
+<p>Nos encontraremos con 3 situaciones distintas para colocar la arista en su lugar</p>
+<center>
+  <p class="style3">Caso uno</p>
+</center>
+<p>La arista va a su derecha. Mirando la T de cara realizamos el siguiente algoritmo:</p>
+<table width="100%" border="1" align="center">
+  <caption align="right" valign="top">&nbsp;
+  </caption>
+  <tbody>
+    <tr></tr>
+    <tr>
+      <th>Movimientos</th>
+      <th>Caso</th>
+    </tr>
+    <tr>
+      <td><p align="center">Movimiento D&rsquo; R&rsquo; D R D F D&rsquo; F&rsquo;</p></td>
+      <th><img src="caso_t_1.png" width="150" height="161" /></th>
+    </tr>
+    <tr></tr>
+  </tbody>
+</table>
+<center>
+  <p class="style2">Caso dos</p>
+</center>
+<p>La arista va a su izquierda. Mirando la T de cara realizamos el siguiente algoritmo:</p>
+<table width="100%" border="1" align="center">
+  <caption align="right" valign="top">&nbsp;
+  </caption>
+  <tbody>
+    <tr></tr>
+    <tr>
+      <th>Movimientos</th>
+      <th>Caso</th>
+    </tr>
+    <tr>
+      <td><p align="center">Movimiento D L D&rsquo; L&rsquo; D&rsquo; F&rsquo; D F</p></td>
+      <th><img src="caso_t_2.png" width="150" height="161" /></th>
+    </tr>
+    <tr></tr>
+  </tbody>
+</table>
+<center>
+  <p class="style1">Caso tres</p>
+</center>
+<p>Nos podemos encontrar que en la capa inferior no haya ninguna arista que no tenga color amarillo y que la segunda capa no est&eacute; resuelta. Esto pasa cuando todas las aristas sin color amarillo est&aacute;n colocadas en la segunda capa pero no de manera correcta.</p>
+<p>Para solucionarlo simplemente colocamos cualquier arista que tenga color amarillo en el lugar de una de las aristas que queremos colocar correctamente. Una vez realizado, la arista sin color amarillo quedar&aacute; en la capa inferior del cubo para poder continuar.</p>
+<p>Una vez todas las aristas est&eacute;n colocadas tendremos la segunda capa completada.</p>
+<p>&nbsp;</p>
+</body>
+</html>
